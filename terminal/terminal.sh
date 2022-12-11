@@ -4,11 +4,11 @@ dnf install curl
 sudo dnf install powerline-fonts
 sudo dnf install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+chsh -s $(which zsh)
 cd
 git clone https://github.com/Inaciocb/FedoraSetup.git
 cd FedoraSetup/terminal
 mv .zshrc cd..
-chsh -s $(which zsh)
 
 echo "------- If you didn't get any error, the terminal customization is properly installed! -------"
 
