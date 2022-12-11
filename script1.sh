@@ -1,4 +1,5 @@
 #!/bin/bash
+##Instalando programas básicos para não ter que fazer na mão
 
 clear
 
