@@ -6,9 +6,9 @@ sudo dnf install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 chsh -s $(which zsh)
 cd
-git clone https://github.com/Inaciocb/FedoraSetup.git
+echo -e "export ZSH="$HOME/.oh-my-zsh \nZSH_THEME="agnoster"\nplugins=(git)\n\nsource $ZSH/oh-my-zsh.sh" >> .zshrc
 cd FedoraSetup/terminal
-mv .zshrc cd..
+
 
 echo "------- If you didn't get any error, the terminal customization is properly installed! -------"
 
